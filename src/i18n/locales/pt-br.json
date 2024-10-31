@@ -1,0 +1,16 @@
+{
+  "header": {
+    "logo": "MoonGPT",
+    "menuPricing": "Preços",
+    "menuAboutUs": "Sobre nós",
+    "signUp": "Cadastrar-se",
+    "login": "Entrar"
+  },
+  "home": {
+    "title": "Use o ChatGPT 4.0 e Pague conforme o uso",
+    "description": "Experimente o poder do ChatGPT 4.0 com preços flexíveis, pagando apenas pelo uso. Pague apenas pelas palavras que você usar para obter a assistência de IA que precisa.",
+    "button": "Experimente agora",
+    "cellphoneScreenshot": "Captura de tela do celular",
+    "computerScreenshot": "Captura de tela do computador"
+  }
+}

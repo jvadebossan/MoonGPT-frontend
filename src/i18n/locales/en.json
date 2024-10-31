@@ -1,0 +1,16 @@
+{
+  "header": {
+    "logo": "MoonGPT",
+    "menuPricing": "Pricing",
+    "menuAboutUs": "About Us",
+    "signUp": "Sign up",
+    "login": "Login"
+  },
+  "home": {
+    "title": "Use the ChatGPT 4.0 and Pay-as-you-go",
+    "description": "Experience the power of ChatGPT 4.0 with flexible, pay-as-you-go pricing. Only pay for the words you use to get the AI assistance you need.",
+    "button": "Try now",
+    "cellphoneScreenshot": "Cellphone screenshot",
+    "computerScreenshot": "Computer screenshot"
+  }
+}
