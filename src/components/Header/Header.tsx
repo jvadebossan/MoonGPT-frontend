@@ -2,6 +2,9 @@ import styled from "@emotion/styled";
 import logo from "../../assets/logo_moongpt.svg";
 import { Box, Button, Theme, Typography, useTheme } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import { ColorModeContext } from "../../providers/colorMode";
+import { useContext } from "react";
+import LightModeIcon from '@mui/icons-material/LightMode';
 
 const StyledLogo = styled("img")(({ theme }) => ({
   width: "10%",
@@ -9,6 +12,7 @@ const StyledLogo = styled("img")(({ theme }) => ({
 }));
 
 export default function Header() {
+  const colorMode = useContext(ColorModeContext);
   const theme = useTheme<Theme>();
   const { t } = useTranslation();
 
@@ -58,6 +62,18 @@ export default function Header() {
           <Button variant="contained">{t("header.login")}</Button>
         </Box>
       </Box>
+
+      <LightModeIcon
+        onClick={colorMode.toggleColorMode}
+        sx={{
+          width: "30px",
+          height: "30px",
+          position: "absolute",
+          right: "11px",
+          top: "23px",
+          borderRadius: "360px",
+        }}
+      />
     </header>
   );
 }
