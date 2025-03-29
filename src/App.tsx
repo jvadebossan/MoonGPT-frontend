@@ -5,10 +5,10 @@ import { ColorModeContext } from "./providers/colorMode";
 import { useState, useMemo } from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { createCustomTheme } from "./providers/theme";
-import PublicLayout from "./components/Layouts/DefaultLayout";
+import PublicLayout from "./components/Layouts/PublicLayout";
 
 function App() {
-  const [mode, setMode] = useState<"light" | "dark">("dark");
+  const [mode, setMode] = useState<"light" | "dark">("light");
   const theme = useMemo(() => createCustomTheme(mode), [mode]);
   const colorMode = useMemo(
     () => ({
@@ -32,4 +32,3 @@ function App() {
 }
 
 export default App;
-("");

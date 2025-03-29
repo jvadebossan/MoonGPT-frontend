@@ -32,11 +32,15 @@ export const createCustomTheme = (mode: PaletteMode) => {
       MuiButton: {
         styleOverrides: {
           root: {
-            backgroundColor: mode === 'dark' ? '#0F172A' : '#F8FAFC',
-            color: mode === 'dark' ? '#F8FAFC' : '#0F172A',
-            '&:hover': {
-              backgroundColor: mode === 'dark' ? '#334155' : '#E2E8F0',
+            // Default button style for all variants
+            '&.MuiButton-contained': {
+              backgroundColor: mode === 'light' ? '#0F172A' : '#E2E8F0',
+              color: mode === 'light' ? '#F8FAFC' : '#0F172A',
+              '&:hover': {
+                backgroundColor: mode === 'light' ? '#334155' : '#F8FAFC',
+              },
             },
+            textTransform: 'capitalize',
           },
         },
       },
