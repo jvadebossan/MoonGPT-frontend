@@ -4,10 +4,11 @@ import { Box, Button, Theme, Typography, useTheme } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { ColorModeContext } from "../../providers/colorMode";
 import { useContext } from "react";
-import LightModeIcon from '@mui/icons-material/LightMode';
+import LightModeIcon from "@mui/icons-material/LightMode";
+import { Link } from "react-router-dom";
 
 const StyledLogo = styled("img")(({ theme }) => ({
-  width: "10%",
+  width: "100%",
   filter: theme === "dark" ? "brightness(0) invert(1)" : "",
 }));
 
@@ -34,14 +35,28 @@ export default function Header() {
           gap={2}
           flex={1}
         >
-          <StyledLogo
-            src={logo}
-            alt="Moongpt Logo"
-            theme={theme.palette.mode}
-          />
-          <Typography component="h3" sx={{ fontWeight: 600 }}>
-            {t("header.logo")}
-          </Typography>
+          <Link
+            to={"home"}
+            style={{
+              width: "35px",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <StyledLogo
+              src={logo}
+              alt="Moongpt Logo"
+              theme={theme.palette.mode}
+            />
+          </Link>
+          <Link to={"home"} style={{ textDecoration: "none" }}>
+            <Typography
+              component="h3"
+              sx={{ fontWeight: 600, color: "text.primary" }}
+            >
+              {t("header.logo")}
+            </Typography>
+          </Link>
         </Box>
         <nav
           style={{
@@ -58,8 +73,12 @@ export default function Header() {
         </nav>
 
         <Box display="flex" justifyContent="flex-end" flex={1} gap={3}>
-          <Button>{t("header.signUp")}</Button>
-          <Button variant="contained">{t("header.login")}</Button>
+          <Link to={"auth/signup"}>
+            <Button>{t("header.signUp")}</Button>
+          </Link>
+          <Link to={"auth/login"}>
+            <Button variant="contained">{t("header.login")}</Button>
+          </Link>
         </Box>
       </Box>
 

@@ -7,8 +7,7 @@ export default function PublicRoutes() {
     <Routes>
       <Route path="*" element={<Navigate to="/home" replace />} />
       <Route path="/home" element={<Home />} />
-      <Route path="/login" element={<AuthPage />} />
-      <Route path="/register" element={<AuthPage />} />
+      <Route path="/auth/:type" element={<AuthPage />} />
     </Routes>
   );
 }
