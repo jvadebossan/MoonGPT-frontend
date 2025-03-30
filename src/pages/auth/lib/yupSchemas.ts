@@ -1,9 +1,9 @@
 import * as yup from "yup";
 
-export const signupSchema = yup.object({
+export const loginSchema = yup.object({
   email: yup
     .string()
-    .email("auth.errors.email.format")
+    .email("auth.errors.email.invalid")
     .required("auth.errors.email.required"),
   password: yup
     .string()

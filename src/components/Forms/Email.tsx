@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material";
+import { Box, TextField } from "@mui/material";
 import { FieldError } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 
@@ -11,7 +11,6 @@ interface EmailInputProps {
 
 export default function EmailInput({
   label = "auth.inputs.email",
-  placeholder = "auth.placeholders.email",
   error,
   register,
 }: EmailInputProps) {
@@ -21,7 +20,6 @@ export default function EmailInput({
     <TextField
       fullWidth
       label={t(label)}
-      placeholder={t(placeholder)}
       variant="outlined"
       margin="normal"
       {...register("email")}

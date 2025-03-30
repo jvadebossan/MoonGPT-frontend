@@ -13,7 +13,6 @@ interface PasswordInputProps {
 
 export default function PasswordInput({
   label = "auth.inputs.password",
-  placeholder = "auth.placeholders.password",
   error,
   register,
 }: PasswordInputProps) {
@@ -28,14 +27,13 @@ export default function PasswordInput({
     <TextField
       fullWidth
       label={t(label)}
-      placeholder={t(placeholder)}
       type={showPassword ? "text" : "password"}
       variant="outlined"
       margin="normal"
       {...register("password")}
       error={!!error}
       helperText={t(error?.message!)}
-      filledInput={{
+      InputProps={{
         endAdornment: (
           <InputAdornment position="end">
             <IconButton

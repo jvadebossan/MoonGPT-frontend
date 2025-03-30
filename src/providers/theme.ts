@@ -48,7 +48,6 @@ export const createCustomTheme = (mode: PaletteMode) => {
       MuiButton: {
         styleOverrides: {
           root: {
-            // Default button style for all variants
             "&.MuiButton-contained": {
               backgroundColor: mode === "light" ? "#0F172A" : "#E2E8F0",
               color: mode === "light" ? "#E2E8F0" : "#0F172A",
@@ -57,6 +56,27 @@ export const createCustomTheme = (mode: PaletteMode) => {
               },
             },
             textTransform: "capitalize",
+          },
+        },
+      },
+      MuiTextField: {
+        styleOverrides: {
+          root: {
+            backgroundColor: mode === "dark" ? "#1E293B" : "#FFFFFF",
+            borderRadius: "8px",
+            "& .MuiOutlinedInput-root": {
+              height: "45px",
+              "& input": {
+                padding: "8px 12px",
+                lineHeight: 1.5,
+              },
+            },
+            "& .MuiInputLabel-root": {
+              top: "-4px",
+            },
+            "& .MuiInputLabel-shrink": {
+              top: "0px",
+            },
           },
         },
       },
