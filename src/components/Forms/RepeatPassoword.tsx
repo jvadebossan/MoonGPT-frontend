@@ -11,8 +11,8 @@ interface PasswordInputProps {
   register: any;
 }
 
-export default function PasswordInput({
-  label = "auth.inputs.password",
+export default function RepeatPasswordInput({
+  label = "auth.inputs.repeatPassword",
   error,
   register,
 }: PasswordInputProps) {
@@ -30,7 +30,7 @@ export default function PasswordInput({
       type={showPassword ? "text" : "password"}
       variant="outlined"
       margin="normal"
-      {...register("password")}
+      {...register("repeatPassword")}
       error={!!error}
       helperText={t(error?.message!)}
       InputProps={{

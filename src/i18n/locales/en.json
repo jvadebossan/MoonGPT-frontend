@@ -22,14 +22,13 @@
       "fullName": "Full name",
       "email": "Email",
       "password": "Password",
-      "repeartPassword": "Repeart password",
-      "remember": "Remeber me"
+      "repeatPassword": "Repeat password"
     },
     "placeholders": {
       "fullName": "Enter full name",
       "email": "Enter your email",
-      "password": "Enter your Password",
-      "repeartPassword": "Repeart yout password"
+      "password": "Enter your password",
+      "repeatPassword": "Repeat your password"
     },
     "errors": {
       "email": {
@@ -37,7 +36,15 @@
         "required": "Email is required"
       },
       "password": {
-        "required": "Password is required"
+        "required": "Password is required",
+        "invalid": "Password must be at least 8 characters, contain one uppercase letter, one lowercase letter, one number, and one special character."
+      },
+      "repeatPassword": {
+        "required": "Please confirm your password",
+        "mismatch": "Passwords do not match"
+      },
+      "fullName": {
+        "required": "Full name is required"
       }
     }
   }

@@ -4,6 +4,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { loginSchema } from "./lib/yupSchemas";
 import EmailInput from "../../components/Forms/Email";
 import PasswordInput from "../../components/Forms/Password";
+import { useTranslation } from "react-i18next";
 
 type FormData = {
   email: string;
@@ -11,6 +12,8 @@ type FormData = {
 };
 
 export default function Login() {
+  const { t } = useTranslation();
+
   const {
     register,
     handleSubmit,
@@ -33,7 +36,7 @@ export default function Login() {
         variant="contained"
         sx={{ marginTop: 2, height: "45px" }}
       >
-        Login
+        {t("auth.login")}
       </Button>
     </form>
   );

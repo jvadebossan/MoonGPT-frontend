@@ -2,7 +2,7 @@
   "header": {
     "logo": "MoonGPT",
     "pricing": "Preços",
-    "aboutUs": "Sobre nós",
+    "aboutUs": "Sobre Nós",
     "signUp": "Cadastrar-se",
     "login": "Entrar"
   },
@@ -12,5 +12,40 @@
     "button": "Experimente agora",
     "cellphoneScreenshot": "Captura de tela do celular",
     "computerScreenshot": "Captura de tela do computador"
+  },
+  "auth": {
+    "loginMsg": "Entre com sua Conta MoonGPT.",
+    "signupMsg": "Crie sua Conta MoonGPT.",
+    "login": "Entrar",
+    "signup": "Cadastrar-se",
+    "inputs": {
+      "fullName": "Nome completo",
+      "email": "E-mail",
+      "password": "Senha",
+      "repeatPassword": "Repetir senha"
+    },
+    "placeholders": {
+      "fullName": "Digite o nome completo",
+      "email": "Digite seu e-mail",
+      "password": "Digite sua senha",
+      "repeatPassword": "Repita sua senha"
+    },
+    "errors": {
+      "email": {
+        "invalid": "Endereço de e-mail inválido",
+        "required": "E-mail é obrigatório"
+      },
+      "password": {
+        "required": "Senha é obrigatória",
+        "invalid": "A senha deve ter pelo menos 8 caracteres, conter uma letra maiúscula, uma letra minúscula, um número e um caractere especial."
+      },
+      "repeatPassword": {
+        "required": "Por favor, confirme sua senha",
+        "mismatch": "As senhas não coincidem"
+      },
+      "fullName": {
+        "required": "Nome completo é obrigatório"
+      }
+    }
   }
 }
