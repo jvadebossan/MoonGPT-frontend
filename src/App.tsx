@@ -8,7 +8,7 @@ import { createCustomTheme } from "./providers/theme";
 import PublicLayout from "./components/Layouts/PublicLayout";
 
 function App() {
-  const [mode, setMode] = useState<"light" | "dark">("light");
+  const [mode, setMode] = useState<"light" | "dark">("dark");
   const theme = useMemo(() => createCustomTheme(mode), [mode]);
   const colorMode = useMemo(
     () => ({

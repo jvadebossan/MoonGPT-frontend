@@ -15,7 +15,7 @@ export const createCustomTheme = (mode: PaletteMode) => {
         paper: mode === 'dark' ? '#1E293B' : '#FFFFFF',
       },
       text: {
-        primary: mode === 'dark' ? '#F8FAFC' : '#0F172A',
+        primary: mode === 'dark' ? '#E2E8F0' : '#0F172A',
         secondary: mode === 'dark' ? '#CBD5E1' : '#475569',
       },
       error: {
@@ -35,7 +35,7 @@ export const createCustomTheme = (mode: PaletteMode) => {
             // Default button style for all variants
             '&.MuiButton-contained': {
               backgroundColor: mode === 'light' ? '#0F172A' : '#E2E8F0',
-              color: mode === 'light' ? '#F8FAFC' : '#0F172A',
+              color: mode === 'light' ? '#E2E8F0' : '#0F172A',
               '&:hover': {
                 backgroundColor: mode === 'light' ? '#334155' : '#F8FAFC',
               },
