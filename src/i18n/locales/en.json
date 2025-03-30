@@ -12,5 +12,16 @@
     "button": "Try now",
     "cellphoneScreenshot": "Cellphone screenshot",
     "computerScreenshot": "Computer screenshot"
+  },
+  "auth": {
+    "loginMsg": "Login with your MoonGPT Account.",
+    "signupMsg": "Create your MoonGPT Account.",
+    "fullName": "Full name",
+    "email": "E-mail",
+    "password": "Password",
+    "repeartPassword": "Repeart password",
+    "remember": "Remeber me",
+    "login": "Login",
+    "signup": "Sign up"
   }
 }
