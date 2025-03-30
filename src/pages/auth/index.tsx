@@ -1,4 +1,4 @@
-import { Box, Grid2, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useParams } from "react-router-dom";
 import Signup from "./Signup";
 import Login from "./Login";
@@ -8,7 +8,6 @@ export default function AuthPage() {
   const { type } = useParams();
   const { t } = useTranslation();
 
-  console.log(type);
   return (
     <Box
       display="flex"
@@ -16,16 +15,16 @@ export default function AuthPage() {
       alignItems="center"
       sx={{ width: "100%", height: "100%" }}
     >
-      <Grid2
-        container
+      <Box
+        display="flex"
+        flexDirection="column"
         justifyContent="flex-start"
         alignItems="center"
-        direction="column"
         sx={{
           minWidth: "350px",
-          minHeight: "400px",
+          minHeight: "380px",
           width: "24%",
-          height: "55%",
+          height: "auto",
           border: "2px solid",
           borderColor: "border.main",
           borderRadius: "10px",
@@ -33,13 +32,13 @@ export default function AuthPage() {
           p: 3,
         }}
       >
-        <Grid2 size={12} sx={{ textAlign: "center", py: 2 }}>
+        <Box sx={{ textAlign: "center", py: 2 }}>
           <Typography variant="h6" fontWeight={600} color="text.secondary">
-            {type === "signup" ? t("auth.signupMsg") : t("auth.loginMsg") }
+            {type === "signup" ? t("auth.signupMsg") : t("auth.loginMsg")}
           </Typography>
-        </Grid2>
+        </Box>
         {type === "signup" ? <Signup /> : <Login />}
-      </Grid2>
+      </Box>
     </Box>
   );
 }

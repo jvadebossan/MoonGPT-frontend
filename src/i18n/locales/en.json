@@ -16,12 +16,29 @@
   "auth": {
     "loginMsg": "Login with your MoonGPT Account.",
     "signupMsg": "Create your MoonGPT Account.",
-    "fullName": "Full name",
-    "email": "E-mail",
-    "password": "Password",
-    "repeartPassword": "Repeart password",
-    "remember": "Remeber me",
     "login": "Login",
-    "signup": "Sign up"
+    "signup": "Sign up",
+    "inputs": {
+      "fullName": "Full name",
+      "email": "Email",
+      "password": "Password",
+      "repeartPassword": "Repeart password",
+      "remember": "Remeber me"
+    },
+    "placeholders": {
+      "fullName": "Enter full name",
+      "email": "Enter your email",
+      "password": "Enter your Password",
+      "repeartPassword": "Repeart yout password"
+    },
+    "errors": {
+      "email": {
+        "invalid": "Invalid email address",
+        "required": "Email is required"
+      },
+      "password": {
+        "required": "Password is required"
+      }
+    }
   }
 }
